@@ -1,5 +1,5 @@
 const Button = ({ label }: { label: string }) => {
-  return <button>{label}</button>;
+  return <button onClick={() => console.log("This is a test")}>{label}</button>;
 };
 
 export default Button;
