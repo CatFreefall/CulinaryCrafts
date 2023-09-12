@@ -1,11 +1,13 @@
 import Upgrade from "./Upgrade";
 import Upgraded from "./Upgraded";
+import LoginLink from "./LoginLink";
+import RegisterButton from "./RegisterLink";
 
 //TODO: conditionally render Upgrade or Upgraded
 
 const NavBar = () => {
   return (
-    <section className="w-screen bg-primary opacity-95 font-header font-bold p-3 pl-7 text-white tracking-tighter">
+    <section className="w-screen bg-primary opacity-95 font-header font-bold py-3 px-7 text-white tracking-tighter">
       <ul className="flex items-center">
         <li>
           <img
@@ -18,7 +20,9 @@ const NavBar = () => {
         <li>
           <Upgraded />
         </li>
-        <li className="ml-auto">c</li>
+        <li className="ml-auto text-lg">
+          <LoginLink />|<RegisterButton />
+        </li>
       </ul>
     </section>
   );

@@ -15,6 +15,8 @@ module.exports = {
         secondary1: "#FEC006",
         secondary2: "#FF9A2A",
 
+        button: "#CE5E68",
+
         white: "#F5F5F5",
         lightgrey: "#ECECEC",
         grey: "#D9D9D9",
