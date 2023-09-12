@@ -18,7 +18,7 @@ const NavBar = () => {
         </li>
         <li className="text-3xl pl-1 pr-7">CulinaryCrafts</li>
         <li>
-          <Upgraded />
+          <Upgrade />
         </li>
         <li className="ml-auto text-lg">
           <LoginLink />|<RegisterButton />

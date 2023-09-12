@@ -1,10 +1,14 @@
+import { BrowserRouter } from "react-router-dom";
+
 import NavBar from "./components/common/NavBar/NavBar";
+import Router from "./Router";
 
 const App = () => {
   return (
-    <main className="font-body">
+    <BrowserRouter>
       <NavBar />
-    </main>
+      <Router />
+    </BrowserRouter>
   );
 };
 
