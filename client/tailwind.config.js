@@ -7,8 +7,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        header: ["Roboto-condensed", "sans-serif"],
-        body: ["Roboto", "sans-serif"],
+        header: ["Roboto", "sans-serif"],
+        body: ["Arial", "sans-serif"],
       },
       colors: {
         primary: "#E0707A",
