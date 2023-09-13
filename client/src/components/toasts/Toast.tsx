@@ -1,3 +1,5 @@
+//TODO: maybe use redux to set the states of toasts and change the state after a few seconds
+
 const Toast = ({ message, toastType }: { message: string, toastType: string }) => {
   return (
     <section className="absolute bg-white shadow-md flex px-3 py-2 m-2 text-sm">
