@@ -1,6 +1,6 @@
 const NutriValues = () => {
   return (
-    <div>NutriValues</div>
+    <div>Nutritional Values</div>
   )
 }
 

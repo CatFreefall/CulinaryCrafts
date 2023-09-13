@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 
 import Recipes from "./pages/Recipes";
 import NutriValues from "./pages/NutriValues";
+import Upgrade from "./pages/Upgrade";
 
 import PageNotFound from "./pages/PageNotFound";
 
@@ -17,6 +18,7 @@ const Router = () => {
       <Route path="/register" element={<Register />} />
       <Route path="/recipes" element={<Recipes />} />
       <Route path="/nutritional-values" element={<NutriValues />} />
+      <Route path="/upgrade" element={<Upgrade />} />
 
       <Route path="*" element={<PageNotFound />} />
     </Routes>

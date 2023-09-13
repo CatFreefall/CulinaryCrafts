@@ -1,8 +1,7 @@
 const Upgrade = () => {
   return (
-    //TODO: add a link
-    <button className="bg-white rounded-sm text-black text-xs py-1 px-3 hover:shadow-lg hover:bg-lightgrey">
-      Upgrade
+    <button className="bg-white rounded-sm text-black text-xs py-1 px-3 hover:bg-opacity-40 hover:text-white transition-all duration-300">
+      <a href="/upgrade">Upgrade</a>
     </button>
   );
 };
