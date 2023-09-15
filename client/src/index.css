@@ -11,5 +11,4 @@
   .link-hover-animation-2 {
     @apply hover:backdrop-brightness-90 transition-all duration-200 p-1;
   }
-
 }

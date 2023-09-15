@@ -1,31 +1,40 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     borderWidth: {
       default: "2px",
+      large: "10px",
+    },
+    colors: {
+      primary: "#E0707A",
+      secondary1: "#FEC006",
+      secondary2: "#FF9A2A",
+
+      button: "#CE5E68",
+
+      white: "#F5F5F5",
+      lightgrey: "#ECECEC",
+      grey: "#D9D9D9",
+      darkgrey: "#939393",
+      black: "#484848",
+      black2: "#000000",
+
+      success: "#42E226",
+      warning: "#FEC006",
+      error: "#FB3A3A",
+    },
+    fontFamily: {
+      header: ["Roboto", "sans-serif"],
+      body: ["Arial", "sans-serif"],
     },
     extend: {
-      fontFamily: {
-        header: ["Roboto", "sans-serif"],
-        body: ["Arial", "sans-serif"],
+      width: {
+        88: "22rem",
+        160: "40rem",
       },
-      colors: {
-        primary: "#E0707A",
-        secondary1: "#FEC006",
-        secondary2: "#FF9A2A",
-
-        button: "#CE5E68",
-
-        white: "#F5F5F5",
-        lightgrey: "#ECECEC",
-        grey: "#D9D9D9",
-        darkgrey: "#939393",
-        black: "#282828",
-
-        success: "#42E226",
-        warning: "#FEC006",
-        error: "#FB3A3A",
+      height: {
+        88: "22rem",
+        104: "26rem",
       },
     },
   },
