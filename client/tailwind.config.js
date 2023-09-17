@@ -36,6 +36,18 @@ module.exports = {
         88: "22rem",
         104: "26rem",
       },
+      gridTemplateRows: {
+        9: "repeat(9, minmax(0, 1fr))",
+      },
+      gridRowStart: {
+        9: "9",
+      },
+      gridTemplateColumns: {
+        13: "repeat(13, minmax(0, 1fr))",
+      },
+      gridColumnStart: {
+        14: "14",
+      },
     },
   },
   plugins: [],
