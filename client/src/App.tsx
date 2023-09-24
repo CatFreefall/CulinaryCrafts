@@ -16,11 +16,13 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <section className="flex flex-col h-screen">
-        <NavBar />
-        <section className="flex-1 overflow-y-auto">
-          <Router />
+      <section className="flex flex-col min-h-screen">
+        <section className="sticky top-0">
+          <NavBar />
         </section>
+        <main className="flex-1 overflow-y-auto flex-grow">
+          <Router />
+        </main>
         <Footer />
       </section>
       {modal.type === "login" && <LoginModal />}

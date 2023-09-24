@@ -1,7 +1,11 @@
+import ModalBackdrop from "./ModalBackdrop";
+
 const RegisterModal = () => {
   return (
-    <div>RegisterModal</div>
-  )
-}
+    <section>
+      <ModalBackdrop />
+    </section>
+  );
+};
 
-export default RegisterModal
+export default RegisterModal;

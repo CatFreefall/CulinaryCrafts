@@ -5,6 +5,7 @@ import RecipesLink from "./RecipesLink";
 import NutriValuesLink from "./NutriValuesLink";
 
 import SecondaryNavBarLink from "./SecondaryNavBarLink";
+import DarkModeToggle from "./DarkModeToggle";
 
 const SecondaryNavBar = () => {
   const location = useLocation().pathname;
@@ -27,6 +28,9 @@ const SecondaryNavBar = () => {
           desiredLocation={"/nutritional-values"}
           children={<NutriValuesLink />}
         />
+        <li className="">
+          <DarkModeToggle />
+        </li>
       </ul>
     </section>
   );

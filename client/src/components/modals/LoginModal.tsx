@@ -4,9 +4,10 @@ import ModalBackdrop from "./ModalBackdrop";
 
 const LoginModal = () => {
   return (
-    <section className="absolute flex justify-center items-center w-screen h-screen top-0 left-0">
+    <section >  
+      {/* className="absolute flex justify-center items-center w-screen h-screen top-0 left-0" */}
       <ModalBackdrop />
-      <div className="w-160 h-104 z-10 bg-white rounded-md grid grid-cols-13 grid-rows-9 border-t-large border-secondary1">
+      {/* <div className="w-160 h-104 z-10 bg-white rounded-md grid grid-cols-13 grid-rows-9 border-t-large border-secondary1">
         <h1 className="text-4xl font-header font-medium text-black mb-6 col-start-3 col-end-6 row-start-2 flex justify-center">
           Log in
         </h1>
@@ -39,7 +40,7 @@ const LoginModal = () => {
           src="/assets/images/food-background-3.png"
           className="col-start-8 col-end-13"
         ></img>
-      </div>
+      </div> */}
     </section>
   );
 };
