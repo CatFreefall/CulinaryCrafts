@@ -1,4 +1,4 @@
-const Upgraded = () => {
+const UpgradedIcon = () => {
   return (
     <img
       alt=""
@@ -8,4 +8,4 @@ const Upgraded = () => {
   );
 };
 
-export default Upgraded;
+export default UpgradedIcon;

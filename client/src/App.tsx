@@ -20,7 +20,7 @@ const App = () => {
         <section className="sticky top-0">
           <NavBar />
         </section>
-        <main className="flex-1 overflow-y-auto flex-grow">
+        <main className="flex-grow">
           <Router />
         </main>
         <Footer />

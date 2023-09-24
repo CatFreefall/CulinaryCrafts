@@ -1,5 +1,5 @@
 import LoginButton from "./LoginButton";
-import Upgrade from "./Upgrade";
+import ButtonLink from "../ButtonLink";
 import RegisterButton from "./RegisterButton";
 
 //TODO: conditionally render Upgrade or Upgraded
@@ -18,7 +18,7 @@ const PrimaryNavBar = () => {
         </li>
         <li className="text-3xl ml-1 mr-7">CulinaryCrafts</li>
         <li>
-          <Upgrade />
+          <ButtonLink color="white" label="Upgrade" destination="/upgrade" />
         </li>
         <li className="ml-auto text-lg">
           <LoginButton />|<RegisterButton />

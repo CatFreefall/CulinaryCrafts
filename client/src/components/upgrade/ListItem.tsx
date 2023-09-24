@@ -5,7 +5,7 @@ type ListItemProps = {
 
 const ListItem = ({ content, type }: ListItemProps) => {
   return (
-    <li className="flex items-center">
+    <li className="flex items-center font-body font-normal">
       <img
         alt=""
         src={`${
