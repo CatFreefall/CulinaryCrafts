@@ -12,7 +12,7 @@ const SecondaryNavBar = () => {
 
   return (
     <section className="font-header font-medium text-lg w-screen bg-grey border-b-default border-darkgrey tracking-tight pl-16 pt-1">
-      <ul className="flex flex-row items-center">
+      <ul className="flex">
         <SecondaryNavBarLink
           location={location}
           desiredLocation={"/"}
@@ -28,7 +28,8 @@ const SecondaryNavBar = () => {
           desiredLocation={"/nutritional-values"}
           children={<NutriValuesLink />}
         />
-        <li className="">
+        <div>Test</div>
+        <li className="ml-auto mr-8">
           <DarkModeToggle />
         </li>
       </ul>

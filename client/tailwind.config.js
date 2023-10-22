@@ -48,6 +48,9 @@ module.exports = {
       gridColumnStart: {
         14: "14",
       },
+      margin: {
+        0.5: "0.125rem",
+      }
     },
   },
   plugins: [],
