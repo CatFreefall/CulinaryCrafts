@@ -9,7 +9,7 @@ const Button = ({
 }) => {
   return (
     <button
-      className={`py-1 px-2 text-white border-default border-black rounded-tl-md rounded-br-md hover:brightness-75 ${styles}`}
+      className={`py-1 px-4 text-white rounded-tl-md rounded-br-md hover:brightness-90 transition-opacity ${styles}`}
       onClick={action}
     >
       {label}

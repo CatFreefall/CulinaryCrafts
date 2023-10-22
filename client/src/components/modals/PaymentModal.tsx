@@ -1,7 +1,11 @@
+import ModalBackdrop from "./ModalBackdrop";
+
 const PaymentModal = () => {
   return (
-    <div>PaymentModal</div>
-  )
-}
+    <section>
+      <ModalBackdrop />
+    </section>
+  );
+};
 
-export default PaymentModal
+export default PaymentModal;

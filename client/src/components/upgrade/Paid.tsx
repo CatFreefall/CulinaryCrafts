@@ -1,8 +1,12 @@
 import Button from "../common/Button";
 import ListItem from "./ListItem";
 import PlanContainer from "./PlanContainer";
+import { useAppDispatch } from "../../hooks/ReduxHooks";
+import { showPaymentModal } from "../../redux/features/modalSlice";
 
 const Paid = () => {
+  const dispatch = useAppDispatch();
+
   return (
     <PlanContainer
       children={
@@ -25,7 +29,11 @@ const Paid = () => {
             />
           </ul>
           <div className="flex justify-center mt-6">
-            <Button styles="bg-secondary1" label="Upgrade" action={() => ""} />
+            <Button
+              styles="bg-secondary1"
+              label="Upgrade"
+              action={() => dispatch(showPaymentModal())}
+            />
           </div>
         </>
       }
