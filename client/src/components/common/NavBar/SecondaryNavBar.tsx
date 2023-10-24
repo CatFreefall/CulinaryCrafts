@@ -28,10 +28,6 @@ const SecondaryNavBar = () => {
           desiredLocation={"/nutritional-values"}
           children={<NutriValuesLink />}
         />
-        <div>Test</div>
-        <li className="ml-auto mr-8">
-          <DarkModeToggle />
-        </li>
       </ul>
     </section>
   );

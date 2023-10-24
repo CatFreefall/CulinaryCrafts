@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <section className="bg-primary px-7 py-3 flex items-center font-header text-white font-medium">
+    <section className="bg-primary px-7 py-3 flex items-center font-header text-white font-medium z-10">
       <img
         alt=""
         src="/assets/icons/website-icons/website-footer-icon.png"
