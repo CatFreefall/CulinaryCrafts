@@ -2,7 +2,7 @@ import Dropdown from "./Dropdown";
 
 const Category = () => {
   return (
-    <Dropdown />
+    <Dropdown type="Category" />
   );
 };
 

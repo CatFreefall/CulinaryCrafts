@@ -1,9 +1,7 @@
 import Dropdown from "./Dropdown";
 
 const CookTime = () => {
-  return (
-    <Dropdown />
-  );
+  return <Dropdown type="Cook Time" />;
 };
 
 export default CookTime;

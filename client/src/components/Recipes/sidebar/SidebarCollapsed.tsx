@@ -14,10 +14,12 @@ const SidebarCollapsed = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
       </div>
       <div className="w-full h-0.5 bg-grey rounded-full mt-1" />
       <div className="w-full">
-        <DropdownIcon />
-        <DropdownIcon />
-        <DropdownIcon />
-        <DropdownIcon />
+        <div onClick={toggleSidebar}>
+          <DropdownIcon type="category" />
+          <DropdownIcon type="cook-time" />
+          <DropdownIcon type="date-posted" />
+          <DropdownIcon type="calories" />
+        </div>
       </div>
     </section>
   );

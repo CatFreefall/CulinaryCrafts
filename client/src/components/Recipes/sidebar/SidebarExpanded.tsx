@@ -9,7 +9,7 @@ const SidebarExpanded = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
       <div
         className="flex items-center mr-1 pr-4 pl-5 py-2 cursor-pointer hover:bg-grey"
         onClick={toggleSidebar}
-      >
+      > 
         <h2>Filter By:</h2>
         <img
           src="/assets/icons/sidebar-icons/minimize-sidebar-icon.png"
