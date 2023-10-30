@@ -11,7 +11,7 @@ const SideBarContainer = () => {
   };
 
   return (
-    <aside className={`duration-300 ease-out ${expanded ? "w-54" : "w-16"}`}>
+    <aside className={`duration-200 ease-out ${expanded ? "w-[54]" : "w-16"}`}>
       {expanded ? (
         <SideBarExpanded toggleSidebar={toggleSidebar} />
       ) : (

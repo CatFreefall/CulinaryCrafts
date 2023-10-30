@@ -1,7 +1,4 @@
-import Category from "./Category";
-import CookTime from "./CookTime";
-import DatePosted from "./DatePosted";
-import Calories from "./Calories";
+import Dropdown from "./Dropdown";
 
 const SideBarExpanded = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (
@@ -17,10 +14,10 @@ const SideBarExpanded = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
         />
       </div>
       <div className="w-full h-0.5 bg-grey mt-1" />
-      <Category />
-      <CookTime />
-      <DatePosted />
-      <Calories />
+      <Dropdown type="Category" />
+      <Dropdown type="Cook Time" />
+      <Dropdown type="Date Posted" />
+      <Dropdown type="Calories" />
     </section>
   );
 };
