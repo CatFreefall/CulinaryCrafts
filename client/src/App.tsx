@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import NavBar from "./components/common/NavBar/NavBar";
+import NavBarContainer from "./components/common/NavBar/NavBarContainer";
 import Router from "./Router";
 
 import { useAppSelector } from "./hooks/ReduxHooks";
@@ -17,10 +17,10 @@ const App = () => {
   return (
     <BrowserRouter>
       <section className="flex flex-col min-h-screen">
-        <section className="sticky top-0">
-          <NavBar />
-        </section>
-        <main className="flex-grow">
+        <header className="sticky top-0 z-10">
+          <NavBarContainer />
+        </header>
+        <main className="grow">
           <Router />
         </main>
         <Footer />

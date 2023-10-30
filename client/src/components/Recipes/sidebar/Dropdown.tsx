@@ -45,9 +45,7 @@ const Dropdown = ({ type }: DropdownType) => {
           className="w-4 h-4 ml-auto"
         />
       </div>
-      <div>
-        <DropdownContents expandedState={expanded} />
-      </div>
+      <DropdownContents expandedState={expanded} />
     </>
   );
 };

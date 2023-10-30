@@ -1,10 +1,10 @@
 import DropdownIcon from "./DropdownIcon";
 
-const SidebarCollapsed = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
+const SideBarCollapsed = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (
-    <section className="h-screen fixed border-r-grey border-r-default shadow-md font-header font-medium pt-1">
+    <section className="sticky top-24 h-136 border-r-grey border-r-default shadow-md font-header font-medium pt-1">
       <div
-        className="flex items-center pr-4 pl-5 py-2 cursor-pointer hover:bg-grey"
+        className="flex items-center pr-5 py-2 cursor-pointer hover:bg-grey"
         onClick={toggleSidebar}
       >
         <img
@@ -25,4 +25,4 @@ const SidebarCollapsed = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   );
 };
 
-export default SidebarCollapsed;
+export default SideBarCollapsed;

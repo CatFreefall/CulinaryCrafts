@@ -37,6 +37,7 @@ module.exports = {
         0.5: "0.125rem",
         88: "22rem",
         104: "26rem",
+        136: "34rem",
       },
       gridTemplateRows: {
         9: "repeat(9, minmax(0, 1fr))",

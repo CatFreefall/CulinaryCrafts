@@ -1,9 +1,9 @@
-import SidebarContainer from "../components/Recipes/sidebar/SidebarContainer";
+import SideBarContainer from "../components/Recipes/sidebar/SideBarContainer";
 
 const Recipes = () => {
   return (
     <div className="flex">
-      <SidebarContainer />
+      <SideBarContainer />
       <div>Recipes</div>
       <div>
         <p>test</p>

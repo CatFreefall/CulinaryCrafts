@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import SidebarExpanded from "./SidebarExpanded";
-import SidebarCollapsed from "./SidebarCollapsed";
+import SideBarExpanded from "./SideBarExpanded";
+import SideBarCollapsed from "./SideBarCollapsed";
 
-const SidebarContainer = () => {
+const SideBarContainer = () => {
   const [expanded, setExpanded] = useState(false);
 
   const toggleSidebar = () => {
@@ -11,18 +11,14 @@ const SidebarContainer = () => {
   };
 
   return (
-    <aside
-      className={`relative whitespace-nowrap transition-all duration-200 ease-out ${
-        expanded ? "w-54" : "w-16"
-      }`}
-    >
+    <aside className={`duration-300 ease-out ${expanded ? "w-54" : "w-16"}`}>
       {expanded ? (
-        <SidebarExpanded toggleSidebar={toggleSidebar} />
+        <SideBarExpanded toggleSidebar={toggleSidebar} />
       ) : (
-        <SidebarCollapsed toggleSidebar={toggleSidebar} />
+        <SideBarCollapsed toggleSidebar={toggleSidebar} />
       )}
     </aside>
   );
 };
 
-export default SidebarContainer;
+export default SideBarContainer;

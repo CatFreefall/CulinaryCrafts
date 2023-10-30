@@ -11,7 +11,7 @@ const ModalBackdrop = () => {
 
   return (
     <section
-      className="absolute top-0 left-0 w-full h-full bg-black2 opacity-70 transition-opacity duration-300 ease-in"
+      className="absolute top-0 left-0 w-full h-full bg-black2 opacity-70 z-10"
       onClick={() => {
         dispatch(hideModal());
         toggleYScroll();

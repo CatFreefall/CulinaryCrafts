@@ -4,7 +4,7 @@ import PrimaryNavBar from "./PrimaryNavBar";
 //TODO: conditionally render Upgrade or Upgraded
 //TODO: conditionally render login/register link and user settings dropdown
 
-const NavBar = () => {
+const NavBarContainer = () => {
   return (
     <>
       <PrimaryNavBar />
@@ -13,4 +13,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBarContainer;
