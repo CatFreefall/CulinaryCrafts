@@ -1,6 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
 
-import NavBarContainer from "./components/common/NavBar/NavBarContainer";
 import Router from "./Router";
 
 import { useAppSelector } from "./hooks/ReduxHooks";
@@ -10,6 +9,8 @@ import LoginModal from "./components/modals/LoginModal";
 import RegisterModal from "./components/modals/RegisterModal";
 import PaymentModal from "./components/modals/PaymentModal";
 import Footer from "./components/common/Footer";
+import PrimaryNavBar from "./components/common/NavBar/PrimaryNavBar";
+import SecondaryNavBar from "./components/common/NavBar/SecondaryNavBar";
 
 const App = () => {
   const modal = useAppSelector(selectModal);
@@ -18,7 +19,8 @@ const App = () => {
     <BrowserRouter>
       <section className="flex flex-col min-h-screen">
         <header className="sticky top-0 z-10">
-          <NavBarContainer />
+          <PrimaryNavBar />
+          <SecondaryNavBar />
         </header>
         <main className="grow">
           <Router />

@@ -1,10 +1,8 @@
 import { useLocation } from "react-router-dom";
 
-import HomeLink from "./HomeLink";
-import RecipesLink from "./RecipesLink";
-import NutriValuesLink from "./NutriValuesLink";
-
 import SecondaryNavBarLink from "./SecondaryNavBarLink";
+
+//TODO: To be conditionally rendered once auth is implemented!
 import DarkModeToggle from "./DarkModeToggle";
 
 const SecondaryNavBar = () => {
@@ -16,17 +14,29 @@ const SecondaryNavBar = () => {
         <SecondaryNavBarLink
           location={location}
           desiredLocation={"/"}
-          children={<HomeLink />}
+          children={
+            <a href="/" className="link-hover-animation-2">
+              Home
+            </a>
+          }
         />
         <SecondaryNavBarLink
           location={location}
           desiredLocation={"/recipes"}
-          children={<RecipesLink />}
+          children={
+            <a href="/recipes" className="link-hover-animation-2">
+              Recipes
+            </a>
+          }
         />
         <SecondaryNavBarLink
           location={location}
           desiredLocation={"/nutritional-values"}
-          children={<NutriValuesLink />}
+          children={
+            <a href="/nutritional-values" className="link-hover-animation-2">
+              Nutritional Values
+            </a>
+          }
         />
       </ul>
     </section>

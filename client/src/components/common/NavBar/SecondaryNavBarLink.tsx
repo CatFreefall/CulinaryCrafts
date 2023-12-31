@@ -1,21 +1,15 @@
-import { ReactNode } from "react";
+import { SecondNavBarProps } from "../../../types";
 
-const SecondaryNavBarLink = ({
-  location,
-  desiredLocation,
-  children,
-}: {
-  location: string;
-  desiredLocation: string;
-  children: ReactNode;
-}) => {
+const SecondaryNavBarLink = (props: SecondNavBarProps) => {
   return (
     <li
       className={`mx-5 border-b-default ${
-        location === `${desiredLocation}` ? "border-primary" : "border-grey"
+        props.location === `${props.desiredLocation}`
+          ? "border-primary"
+          : "border-grey"
       }`}
     >
-      {children}
+      {props.children}
     </li>
   );
 };

@@ -1,6 +1,5 @@
-import LoginButton from "./LoginButton";
+import NavBarButton from "./NavBarButton";
 import Button from "../Button";
-import RegisterButton from "./RegisterButton";
 
 //TODO: conditionally render Upgrade or Upgraded
 //TODO: conditionally render login/register or user settings dropdown
@@ -26,7 +25,7 @@ const PrimaryNavBar = () => {
           />
         </li>
         <li className="ml-auto text-lg">
-          <LoginButton />|<RegisterButton />
+          <NavBarButton text="Login" />|<NavBarButton text="Register" />
         </li>
       </ul>
     </section>
