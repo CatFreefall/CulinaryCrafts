@@ -1,18 +1,19 @@
-const Button = ({
-  styles,
-  label,
-  action,
-}: {
-  styles: string;
-  label: string;
-  action: () => void;
-}) => {
+import { ButtonProps } from "../../types";
+
+const Button = (props: ButtonProps) => {
   return (
     <button
-      className={`py-1 px-4 text-white rounded-tl-md rounded-br-md hover:brightness-90 transition-opacity ${styles}`}
-      onClick={action}
+      className={`bg-${props.bgColor} text-${props.textColor} ${
+        props.size === "small"
+          ? ""
+          : props.size === "default"
+          ? "text-xs py-1 px-3"
+          : props.size === "large"
+          ? "text-base py-1 px-4"
+          : ""
+      } rounded-sm hover:bg-opacity-40 hover:text-white transition-all duration-300`}
     >
-      {label}
+      {props.action}
     </button>
   );
 };

@@ -1,4 +1,4 @@
-import DropdownIcon from "./DropdownIcon";
+import DropdownIcon from "./dropdown/DropdownIcon";
 
 const SideBarCollapsed = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (

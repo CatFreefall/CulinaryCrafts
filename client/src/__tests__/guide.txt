@@ -1,0 +1,11 @@
+//TODO: a simple test consists of 3 parts:
+// Rendering a component (render(<Component />))
+// select a specific HTML element (getByLabelText, getByText, getByTestId, etc.)
+// expect something about the selected element (expect(element).toBeSomething())
+
+//TODO: What to test: (Behaviour, not implementation)
+// test that main components render without errors
+// test that the component renders with props
+// test if the component renders in different states (conditional rendering)
+// test that the component reacts to user interaction (click, hover, etc.)
+// in general, make sure to test code that is relevant to user experience

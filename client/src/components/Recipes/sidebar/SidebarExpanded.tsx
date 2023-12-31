@@ -1,4 +1,4 @@
-import Dropdown from "./Dropdown";
+import Dropdown from "./dropdown/Dropdown";
 
 const SideBarExpanded = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (

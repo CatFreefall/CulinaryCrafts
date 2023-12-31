@@ -30,9 +30,10 @@ const Paid = () => {
           </ul>
           <div className="flex justify-center mt-6">
             <Button
-              styles="bg-secondary1"
-              label="Upgrade"
-              action={() => dispatch(showPaymentModal())}
+              bgColor="secondary1"
+              textColor="white"
+              action={<a onClick={() => dispatch(showPaymentModal())}>Upgrade</a>}
+              size="large"
             />
           </div>
         </>

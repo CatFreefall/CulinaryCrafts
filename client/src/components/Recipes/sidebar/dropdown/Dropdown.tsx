@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import DropdownContents from "./DropdownContents";
+import ContentComponent from "./ContentComponent";
 
 interface DropdownType {
   type: "Category" | "Cook Time" | "Date Posted" | "Calories";
@@ -17,7 +18,7 @@ const Dropdown = ({ type }: DropdownType) => {
     <>
       <div
         className={`flex items-center py-2 px-4 mr-1 mt-1 cursor-pointer hover:bg-grey border-l-default ${
-          expanded ? "border-secondary2" : "border-grey"
+          expanded ? "border-secondary1" : "border-grey"
         }`}
         onClick={toggleDropddown}
       >
@@ -35,7 +36,7 @@ const Dropdown = ({ type }: DropdownType) => {
           }-icon.png`}
           className="w-6"
         />
-        <h6 className="ml-2 mr-8">{type}</h6>
+        <h6 className="mx-2">{type}</h6>
         <img
           src={`${
             expanded
@@ -45,7 +46,22 @@ const Dropdown = ({ type }: DropdownType) => {
           className="w-4 h-4 ml-auto"
         />
       </div>
-      <DropdownContents expandedState={expanded} />
+      <DropdownContents
+        expandedState={expanded}
+        children={
+          type === "Category" ? (
+            <ContentComponent />
+          ) : type === "Cook Time" ? (
+            <ContentComponent />
+          ) : type === "Date Posted" ? (
+            <ContentComponent />
+          ) : type === "Calories" ? (
+            <ContentComponent />
+          ) : (
+            <></>
+          )
+        }
+      />
     </>
   );
 };

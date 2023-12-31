@@ -1,14 +1,12 @@
 import ModalBackdrop from "./ModalBackdrop";
 
-const Modal = ({
-  children,
-  sideImage,
-  modalFooter,
-}: {
+type ModalProps = {
   children: JSX.Element;
   sideImage: JSX.Element;
   modalFooter: JSX.Element;
-}) => {
+};
+
+const Modal = ({ children, sideImage, modalFooter}: ModalProps) => {
   return (
     <section className="absolute flex justify-center items-center w-screen h-screen top-0 left-0">
       <ModalBackdrop />
