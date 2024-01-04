@@ -1,12 +1,12 @@
 import Button from "../common/Button";
 import InputBox from "../common/InputBox";
-import ModalBackdrop from "./ModalBackdrop";
+import Modal from "./Modal";
 
 const LoginModal = () => {
   return (
-    <section>  
+    <section>
       {/* className="absolute flex justify-center items-center w-screen h-screen top-0 left-0" */}
-      <ModalBackdrop />
+      <Modal children={<></>} />
       {/* <div className="w-160 h-104 z-10 bg-white rounded-md grid grid-cols-13 grid-rows-9 border-t-large border-secondary1">
         <h1 className="text-4xl font-header font-medium text-black mb-6 col-start-3 col-end-6 row-start-2 flex justify-center">
           Log in

@@ -1,9 +1,9 @@
-import ModalBackdrop from "./ModalBackdrop";
+import Modal from "./Modal";
 
 const RegisterModal = () => {
   return (
     <section>
-      <ModalBackdrop />
+      <Modal children={<></>} />
     </section>
   );
 };

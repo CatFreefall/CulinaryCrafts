@@ -4,19 +4,19 @@ import {
   showRegisterModal,
 } from "../../../redux/features/modalSlice";
 
-const NavBarButton = ({ text }: { text: string }) => {
+const NavBarButton = (props: { text: string }) => {
   const dispatch = useAppDispatch();
 
   return (
     <button
       className="link-hover-animation"
       onClick={() =>
-        text === "Login"
+        props.text === "Login"
           ? dispatch(showLoginModal())
           : dispatch(showRegisterModal())
       }
     >
-      <span className="relative px-1">{text}</span>
+      <span className="relative px-1">{props.text}</span>
     </button>
   );
 };

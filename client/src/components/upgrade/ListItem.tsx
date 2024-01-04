@@ -1,7 +1,4 @@
-type ListItemProps = {
-  content: string;
-  type: "free" | "paid";
-};
+import { ListItemProps } from "../../types";
 
 const ListItem = ({ content, type }: ListItemProps) => {
   return (

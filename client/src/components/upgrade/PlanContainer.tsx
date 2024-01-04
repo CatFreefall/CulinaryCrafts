@@ -1,18 +1,13 @@
-import { ReactNode } from "react";
+import { PlanContainerProps } from "../../types";
 
-type PlanContainerProps = {
-  children: ReactNode;
-  type: "free" | "paid";
-};
-
-const PlanContainer = ({ children, type }: PlanContainerProps) => {
+const PlanContainer = (props: PlanContainerProps) => {
   return (
     <div
-      className={`bg-white w-56 px-7 py-6 border-t-large rounded-tl-md rounded-br-md shadow-lg mx-6 ${
-        type === "free" ? "border-primary" : "border-secondary1"
+      className={`bg-white w-56 px-7 py-6 border-t-large rounded-tl-md shadow-lg mx-6 ${
+        props.type === "free" ? "border-primary" : "border-secondary1"
       }`}
     >
-      {children}
+      {props.children}
     </div>
   );
 };
