@@ -3,14 +3,30 @@ export type ButtonProps = {
   textColor: string;
   action: JSX.Element;
   size: "small" | "default" | "large";
-}
+};
+
+export type TextBoxProps = {
+  type:
+    | "Email"
+    | "Password"
+    | "Confirm Password"
+    | "Card Number"
+    | "Exp. Date"
+    | "CVV/CVC"
+    | "Full Name"
+    | "Street Address"
+    | "Country"
+    | "City"
+    | "Zip Code";
+  state: React.Dispatch<React.SetStateAction<string>>;
+};
 
 // navbar types
 export type SecondNavBarProps = {
   location: string;
   desiredLocation: string;
   children: JSX.Element;
-}
+};
 
 // upgrade page types
 type PlanType = "free" | "paid";
