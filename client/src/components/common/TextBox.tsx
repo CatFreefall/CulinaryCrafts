@@ -7,18 +7,26 @@ import isValidTextBox from "../../util/isValidTextBox";
 
 const TextBox = (props: TextBoxProps) => {
   const [error, setError] = useState(false);
+  const [value, setValue] = useState("");
 
   useEffect(() => {
-    isValidTextBox(props) ? setError(false) : setError(true);
-  }, [props.type]);
+    if (!isValidTextBox(props, value)) {
+      if (value) setError(true);
+      else setError(false);
+    } else setError(false);
+
+    // The textbox's state is only updated if an error DNE. Otherwise an empty string is passed
+    props.state(error ? "" : value);
+  }, [value, error]);
+
   return (
     <input
       type="text"
-      className={`rounded-sm border-default opacity-80 outline-none hover:bg-white text-xs py-[0.15rem] px-1 transition-colors duration-700 shadow-sm ${
+      className={`rounded-sm border-default opacity-80 outline-none hover:bg-white text-xs py-[0.15rem] px-1 transition-colors duration-500 shadow-sm ${
         error ? "border-error" : "border-black"
       }`}
       placeholder={props.type}
-      onChange={(e) => props.state(e.target.value)}
+      onChange={(e) => setValue(e.target.value)}
     />
   );
 };

@@ -17,7 +17,7 @@ export type TextBoxProps = {
     | "Street Address"
     | "Country"
     | "City"
-    | "Zip Code";
+    | "Postal Code";
   state: React.Dispatch<React.SetStateAction<string>>;
 };
 
